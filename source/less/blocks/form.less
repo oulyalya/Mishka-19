@@ -1,0 +1,48 @@
+.form__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+.form__group-name {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: @color-light;
+}
+
+.form__group-name::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25px;
+  min-width: 100px;
+  height: 1px;
+  background-color: @color-light;
+}
+
+.form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form__required-fields {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__input-textarea {
+  width: 100%;
+  resize: vertical;
+  border: 2px solid @text-light;
+}
