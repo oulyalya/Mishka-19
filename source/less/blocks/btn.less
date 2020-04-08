@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   vertical-align: middle;
-  width: 259px;
+  width: 100%;
   padding-top: 13px;
   padding-bottom: 13px;
   font-size: 17px;
@@ -13,16 +13,14 @@
   text-decoration: none;
   background-color: transparent;
   border: 2px solid @text-light;
-}
-
-.btn:hover {
-  color: white;
-  background-color: @text-light;
-}
-
-.btn:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: @text-light;
+  &:hover {
+    color: white;
+    background-color: @text-light;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @text-light;
+  }
 }
 
 

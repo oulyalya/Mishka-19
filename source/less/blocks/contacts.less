@@ -1,7 +1,5 @@
 .contacts__wrapper {
-  width: 320px;
-  padding: 0 30px;
-  margin: 0 auto;
+  .wrapper;
 }
 
 .contacts {
@@ -37,14 +35,12 @@
   padding-bottom: 4px;
   color: @text-light;
   border-bottom: 1px solid @link-border;
-}
-
-.contacts__email:hover {
-  color: @link-border;
-}
-
-.contacts__email:active {
-  opacity: 30%;
+  &:hover {
+    color: @link-border;
+  }
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .contacts__map img {
