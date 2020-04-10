@@ -1,14 +1,23 @@
-.goods__link-bg:first-of-type {
-  background-color: @color-light;
-}
-
-.goods__link-bg:nth-of-type(2) {
-  background-color:@color-middle;
+.goods__link-bg {
+  &--interior {
+    background-color: @color-light;
+    &:hover,
+    &:active {
+      background-color: #59d5bc;
+    }
+  }
+  &--toys {
+    background-color: @color-middle;
+    &:hover,
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
 }
 
 .goods__link-wrapper {
   display: block;
-  width: 320px;
+  width: @mobile-width;
   padding-left: 30px;
   padding-right: 38px;
   padding-top: 26px;
@@ -26,16 +35,15 @@
   width: 100%;
   // background-position: right center;
   // background-repeat: no-repeat;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.goods__link:active {
- color: rgba(255, 255, 255, 0.3);
-}
-
-.goods__link--interior {
-  background-image: url();
-}
-
-.goods__link--toys {
-  background-image: url();
-}
+// .goods__link {
+//   &--interior {
+//     background-image: url();
+//   &--toys {
+//     background-image: url();
+//   }
+// }
