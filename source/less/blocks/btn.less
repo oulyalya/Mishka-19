@@ -5,7 +5,7 @@
   padding-top: 13px;
   padding-bottom: 13px;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1.8em;
   font-weight: bold;
   color: @text-light;
   text-align: center;
@@ -13,14 +13,39 @@
   text-decoration: none;
   background-color: transparent;
   border: 2px solid @text-light;
+
   &:hover {
     color: white;
     background-color: @text-light;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: @text-light;
   }
+
+  &--video {
+    width: auto;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
 }
 
+@media (min-width: @tablet-width) {
+  .btn {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 
+    &--video {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

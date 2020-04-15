@@ -3,3 +3,52 @@
   margin-top: 0;
   padding-left: 0;
 }
+
+// волнистый край фона
+.wave {
+  background-size: 100vw 50px;
+  position: relative;
+  color: @light-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+  }
+}
+
+// серый фон блоков формы
+.set-background-color {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc((100vw - @tablet-width) / -2);
+    width: 100vw;
+    height: 100%;
+    background-color: @bg-grey;
+    z-index: -10;
+
+    @media (min-width: @desktop-width) {
+      left: calc((100vw - @desktop-width) / -2);
+    }
+  }
+}

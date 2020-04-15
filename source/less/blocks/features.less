@@ -16,7 +16,7 @@
   position: relative;
   margin-bottom: 28px;
   padding-top: 55px;
-  line-height: 20px;
+  line-height: 1.18em;
   color: @text-dark;
 }
 
@@ -29,4 +29,54 @@
   width: 40px;
   height: 40px;
   background-color: red;
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+
+  .features__item {
+    width: 330px;
+    font-size: 20px;
+    line-height: 1.1em;
+    margin-bottom: 55px;
+
+    &--materials {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--love {
+      order: 2;
+    }
+
+    &--domestic {
+      order: 4;
+    }
+
+    &--packing {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    margin-left: 175px;
+  }
+
+  .features__item {
+    width: 350px;
+  }
 }

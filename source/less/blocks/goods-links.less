@@ -1,13 +1,16 @@
 .goods__link-bg {
   &--interior {
     background-color: @color-light;
+
     &:hover,
     &:active {
       background-color: #59d5bc;
     }
   }
+
   &--toys {
     background-color: @color-middle;
+
     &:hover,
     &:active {
       background-color: #46c1ae;
@@ -29,21 +32,52 @@
   display: block;
   padding-right: 112px;
   font-size: 19px;
-  line-height: 24px;
+  line-height: 1.26em;
   font-weight: 700;
   color: white;
   width: 100%;
   // background-position: right center;
   // background-repeat: no-repeat;
+
+  // &--interior {
+  //   background-image: url();
+  // }
+
+  // &--toys {
+  //   background-image: url();
+  // }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 }
 
-// .goods__link {
-//   &--interior {
-//     background-image: url();
-//   &--toys {
-//     background-image: url();
-//   }
+@media (min-width: @tablet-width) {
+  .goods-links {
+    // .wave;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .goods__link-wrapper {
+    box-sizing: border-box;
+
+    width: 334px;
+  }
+
+  .goods__link {
+    box-sizing: border-box;
+
+    width: 100%;
+    padding-right: 150px;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+
 // }
