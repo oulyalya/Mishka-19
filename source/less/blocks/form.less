@@ -12,6 +12,10 @@
 
 // паддинги внизу блоков
 .form__group {
+  padding-left: 0;
+  margin-top: 0;
+  border: 0 none;
+
   &--radio {
     padding-bottom: 37px;
   }
@@ -40,6 +44,7 @@
 .form__group-name {
   position: relative;
   display: block;
+  padding-top: 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: @color-light;
@@ -264,10 +269,13 @@
 
   .form__group {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
 
     // паддинги снизу
     &--radio {

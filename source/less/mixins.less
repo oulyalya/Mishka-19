@@ -41,14 +41,14 @@
     content: "";
     position: absolute;
     top: 0;
-    left: calc((100vw - @tablet-width) / -2);
+    left: ~"calc((100vw - @{tablet-width}) / -2)";
     width: 100vw;
     height: 100%;
     background-color: @bg-grey;
     z-index: -10;
 
     @media (min-width: @desktop-width) {
-      left: calc((100vw - @desktop-width) / -2);
+      left: ~"calc((100vw - @{desktop-width}) / -2)";
     }
   }
 }
