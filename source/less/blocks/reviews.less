@@ -2,6 +2,10 @@
   .wrapper;
 }
 
+.reviews__img {
+  display: none;
+}
+
 .reviews {
   padding-top: 34px;
 }
@@ -25,6 +29,54 @@
 }
 
 .reviews__author-link {
+  display: block;
   margin: 0;
   color: @text-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  .reviews__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 350px;
+    height: 457px;
+    z-index: -1;
+  }
+
+  .reviews__item {
+    max-width: 642px;
+    margin-top: 60px;
+    font-size: 17px;
+    line-height: 1.77em;
+  }
+
+  .reviews__author {
+    margin-top: 40px;
+  }
+
+  .rewievs__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    top: 80px;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item {
+    max-width: 770px;
+    margin-left: 175px;
+  }
 }
