@@ -17,11 +17,13 @@
   &:hover {
     color: white;
     background-color: @text-light;
+    transition: 0.4s;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: @text-light;
+    transition: 0.2s;
   }
 
   &--video {
@@ -31,21 +33,26 @@
     margin-left: 34px;
     margin-right: 34px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .btn {
+  @media (min-width: @tablet-width) {
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
 
     &--video {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
+      max-width: 100%;
+      margin-left: 42px;
+      margin-right: 42px;
       margin-top: auto;
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--video {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

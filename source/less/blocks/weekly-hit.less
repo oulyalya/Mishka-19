@@ -1,9 +1,52 @@
 .weekly-hit__wrapper {
   .wrapper;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-top: 50px;
+  }
+}
+
+.weekly-hit__title {
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 .weekly-hit {
   padding-top: 25px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.weekly-hit__product-name {
+  @media (min-width: @tablet-width) {
+    max-width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 .weekly-hit__label {
@@ -12,12 +55,50 @@
   font-size: 17px;
   color: @color-light;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    font-size: 17px;
+    line-height: 1em;
+  }
+}
+
+.weekly-hit__info {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 336px;
+    min-height: 404px;
+    padding-right: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    margin-left: 175px;
+  }
 }
 
 .weekly-hit__description {
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 1.47em;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 1.77em;
+  }
 }
 
 .weekly-hit__details-table {
@@ -26,6 +107,10 @@
   font-size: 15px;
   line-height: 1.33em;
   border-collapse: collapse;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 105px;
+  }
 }
 
 .weekly-hit__details-table tr {
@@ -45,50 +130,8 @@
   width: 260px;
   height: 315px;
   margin-bottom: 20px;
-}
 
-.weekly-hit__price {
-  margin: 0;
-  margin-bottom: 23px;
-  font-weight: 700;
-  text-align: center;
-}
-
-@media (min-width: @tablet-width) {
-  .weekly-hit__wrapper {
-    box-sizing: border-box;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .weekly-hit__title {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: @tablet-width;
-  }
-
-  .weekly-hit__info {
-    position: relative;
-    box-sizing: border-box;
-    width: 336px;
-    min-height: 404px;
-    padding-right: 44px;
-  }
-
-  .weekly-hit__product-name {
-    max-width: 520px;
-  }
-
-  .weekly-hit__label {
-    margin-left: auto;
-    max-width: 100px;
-    text-align: center;
-  }
-
-  .weekly-hit__img {
+  @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
     right: -100%;
@@ -97,63 +140,38 @@
     margin-bottom: 0;
   }
 
-  .weekly-hit__btn {
-    box-sizing: border-box;
-    width: 100%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .weekly-hit__wrapper {
-    position: relative;
-    padding-top: 50px;
-  }
-
-  .weekly-hit__title {
-    position: relative;
-    width: 100%;
-    z-index: 2;
-  }
-
-  .weekly-hit__label {
-    position: absolute;
-    top: 15px;
-    left: 35px;
-    font-size: 17px;
-    line-height: 1em;
-  }
-
-  .weekly-hit__product-name {
-    max-width: 100%;
-  }
-
-  .weekly-hit__info {
-    position: static;
-    margin-left: 175px;
-  }
-
-  .weekly-hit__description {
-    margin-bottom: 50px;
-    font-size: 17px;
-    line-height: 1.77em;
-  }
-
-  .weekly-hit__details-table {
-    margin-bottom: 105px;
-  }
-
-  .weekly-hit__price {
-    font-size: 20px;
-    line-height: 1.2em;
-    margin-bottom: 30px;
-  }
-
-  .weekly-hit__img {
-    // position: absolute;
-    top: -5px;
+  @media (min-width: @desktop-width) {
+    // top: -5px;
+    bottom: 0;
     left: 50%;
     width: 525px;
     height: 636px;
     z-index: 1;
+  }
+}
+
+.weekly-hit__buy {
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.weekly-hit__price {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+  }
+}
+
+.weekly-hit__btn {
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 100%;
   }
 }
