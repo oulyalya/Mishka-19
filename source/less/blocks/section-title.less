@@ -4,9 +4,53 @@
   font-size: 25px;
   color: @text-dark;
 
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 1.16em;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 1.1em;
+  }
+
+  &--index {
+    @media (min-width: @tablet-width) {
+      position: relative;
+      margin-left: -5px;
+      z-index: 2;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 175px;
+    }
+  }
+
   &--contacts {
     font-size: 18px;
     line-height: 1.67em;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 1.16em;
+    }
+
+    @media (min-width: @tablet-width) {
+      // margin-left: 0;
+      // text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  &--reviews {
+    @media (min-width: @tablet-width) {
+      padding-top: 80px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 130px;
+    }
   }
 
   &--video {
@@ -25,53 +69,21 @@
       top: 50%;
       transform: translateY(-50%);
       width: 32px;
-      height: 22px;
-      background-color: red;
-    }
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .section-title {
-    font-size: 43px;
-    line-height: 1.16em;
-
-    &--index {
-      position: relative;
-      margin-left: -5px;
-      z-index: 2;
+      height: 24px;
+      background-image: url("../img/icon-video.svg");
+      background-size: 32px 22px;
+      background-repeat: no-repeat;
     }
 
-    &--contacts {
-      font-size: 43px;
-      line-height: 1.16em;
-    }
-
-    &--reviews {
-      padding-top: 80px;
-      margin-bottom: 50px;
-    }
-
-    &--video {
+    @media (min-width: @tablet-width) {
       margin-left: 0;
       margin-right: 0;
       padding-left: 55px;
       font-size: 20px;
       line-height: 1.2em;
     }
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .section-title {
-    font-size: 53px;
-    line-height: 1.1em;
-
-    &--index {
-      padding-left: 175px;
-    }
-
-    &--video {
+    @media (min-width: @desktop-width) {
       padding-left: 0;
       padding-top: 50px;
       font-size: 20px;
