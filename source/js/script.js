@@ -45,5 +45,5 @@ document.onkeydown = function(evt) {
       overlay.classList.remove("modal-overlay--show");
       popup.classList.remove("modal--show");
   }
-};
+}
 
