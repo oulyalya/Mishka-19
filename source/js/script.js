@@ -46,4 +46,3 @@ document.onkeydown = function(evt) {
       popup.classList.remove("modal--show");
   }
 }
-
