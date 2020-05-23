@@ -1,4 +1,6 @@
 .goods-links {
+  margin-top: 122px;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     left: 50%;
@@ -16,12 +18,10 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    // margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    // margin: 0 auto;
   }
 }
 
@@ -66,16 +66,33 @@
   padding-bottom: 30px;
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: 90% 50%;
 
   &--interior {
     background-image: url("../img/icon-interior.svg");
     background-size: 40px 62px;
+    background-position: 85% 52%;
+
+    @media (min-width: @tablet-width) {
+      background-position: 88% 48%;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 92.5% 48%;
+    }
   }
 
   &--toys {
     background-image: url("../img/icon-toy.svg");
     background-size: 60px 60px;
+    background-position: 87% 52%;
+
+    @media (min-width: @tablet-width) {
+      background-position: 88% 48%;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 92.5% 48%;
+    }
   }
 
   @media (min-width: @tablet-width) {

@@ -17,7 +17,12 @@
     background-repeat: repeat-x;
     background-image: url("../img/bg-zigzag-fill.svg");
     z-index: 1000;
+    background-size: auto 23px;
     transform: translateY(50%);
+
+    @media (min-width: @desktop-width) {
+      background-size: auto 35px;
+    }
   }
 }
 
@@ -28,7 +33,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    // margin-left: ~"calc((100vw - @{tablet-width}) / -2)";
     width: 100vw;
     height: 100%;
     background-color: @light-grey;
@@ -36,8 +40,6 @@
 
     @media (min-width: @desktop-width) {
       margin-left: 0;
-
-      // margin-left: ~"calc((100vw - @{desktop-width}) / -2)";
     }
   }
 }
