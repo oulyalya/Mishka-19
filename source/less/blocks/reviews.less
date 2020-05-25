@@ -11,6 +11,10 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url("../img/review@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -68,7 +72,7 @@
   color: @text-dark;
 }
 
-.rewievs__controls {
+.reviews__controls {
   position: relative;
   display: flex;
   flex-direction: row;

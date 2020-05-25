@@ -2,7 +2,7 @@
   background-color: @light-grey;
 }
 
-.footer__wrapper {
+.page-footer__wrapper {
   padding-top: 28px;
   padding-bottom: 10px;
   text-align: center;
@@ -23,4 +23,20 @@
     max-width: @desktop-width;
     padding-bottom: 45px;
   }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo-link:hover .page-footer__logo-svg {
+  .footer-link-hover;
+}
+
+.page-footer__logo-link:active .page-footer__logo-svg {
+  .footer-link-active;
 }
