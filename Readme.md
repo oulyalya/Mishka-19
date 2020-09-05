@@ -1,7 +1,8 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+п.с. Это не Мишка, это ужаснее, чем Франкенштейн. Проект а) не доделан, б) являет собой мой бесценный опыт, благодаря которому теперь знаю, как НЕ надо делать. 
 
 * Студент: [Ольга](https://up.htmlacademy.ru/adaptive/19/user/1213555).
-* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
+* Наставник (не виноват): [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
